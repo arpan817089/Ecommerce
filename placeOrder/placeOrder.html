@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../placeOrder/placeOrder.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Add-To-Cart & Place-Order</title>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="image">
+            <img src="../Background image/biryani.jpg" height="100%" width="100%">
+        </div>
+        <div class="title">
+            <p>Biryani</p><br>
+            <div class="name">
+                <h3><b>NAME</b>
+            </div>
+            <div class="price">
+                <h3><b>PRICE</b>
+            </div>
+            <div class="quantity">
+                <h3><b>QUANTITY</b><br><br>
+            </div>
+            <div class="bir1">
+                <h4><b>Chicken-Biryani</b></h4>
+            </div>
+            <div class="price1">
+                <h4>100/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract">-</button>
+                <input type="text" id="num" value="1">
+                <button class="addition">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Mutton-Biryani</b></h4>
+            </div>
+            <div class="price1">
+                <h4>150/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract2">-</button>
+                <input type="text" id="num2" value="1">
+                <button class="addition2">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Special-Biryani</b></h4>
+            </div>
+            <div class="price1">
+                <h4>220/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract3">-</button>
+                <input type="text" id="num3" value="1">
+                <button class="addition3">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Alu-Biryani</b></h4>
+            </div>
+            <div class="price1">
+                <h4>80/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract4">-</button>
+                <input type="text" id="num4" value="1">
+                <button class="addition4">+</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="cards">
+        <div class="image">
+            <img src="../Background image/burger.jpg" height="100%" width="100%">
+        </div>
+        <div class="title">
+            <p>Burger</p><br>
+            <div class="name">
+                <h3><b>NAME</b>
+            </div>
+            <div class="price">
+                <h3><b>PRICE</b>
+            </div>
+            <div class="quantity">
+                <h3><b>QUANTITY</b><br><br>
+            </div>
+            <div class="bir1">
+                <h4><b>Cheese-Burger</b></h4>
+            </div>
+            <div class="price1">
+                <h4>150/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract5">-</button>
+                <input type="text" id="num5" value="1">
+                <button class="addition5">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Veg-Burger</b></h4>
+            </div>
+            <div class="price1">
+                <h4>100/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract6">-</button>
+                <input type="text" id="num6" value="1">
+                <button class="addition6">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Stuffed-Chicken-Burger</b></h4>
+            </div>
+            <div class="price1">
+                <h4>220/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract7">-</button>
+                <input type="text" id="num7" value="1">
+                <button class="addition7">+</button>
+            </div>
+            <div class="bir1">
+                <h4><b>Corn-Prawn-Burger</b></h4>
+            </div>
+            <div class="price1">
+                <h4>200/-</h4><br>
+            </div>
+            <div>
+                <button class="subtract8">-</button>
+                <input type="text" id="num8" value="1">
+                <button class="addition8">+</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.querySelector(".subtract").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition").addEventListener("click",function(){
+            valueCount = document.getElementById("num").value;
+            valueCount++;
+            document.getElementById("num").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract").removeAttribute("disabled");
+                document.querySelector(".subtract").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract").addEventListener("click",function(){
+            valueCount = document.getElementById("num").value;
+            valueCount--;
+            document.getElementById("num").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract2").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition2").addEventListener("click",function(){
+            valueCount = document.getElementById("num2").value;
+            valueCount++;
+            document.getElementById("num2").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract2").removeAttribute("disabled");
+                document.querySelector(".subtract2").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract2").addEventListener("click",function(){
+            valueCount = document.getElementById("num2").value;
+            valueCount--;
+            document.getElementById("num2").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract2").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract3").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition3").addEventListener("click",function(){
+            valueCount = document.getElementById("num3").value;
+            valueCount++;
+            document.getElementById("num3").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract3").removeAttribute("disabled");
+                document.querySelector(".subtract3").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract3").addEventListener("click",function(){
+            valueCount = document.getElementById("num3").value;
+            valueCount--;
+            document.getElementById("num3").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract3").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract4").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition4").addEventListener("click",function(){
+            valueCount = document.getElementById("num4").value;
+            valueCount++;
+            document.getElementById("num4").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract4").removeAttribute("disabled");
+                document.querySelector(".subtract4").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract4").addEventListener("click",function(){
+            valueCount = document.getElementById("num4").value;
+            valueCount--;
+            document.getElementById("num4").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract4").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract5").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition5").addEventListener("click",function(){
+            valueCount = document.getElementById("num5").value;
+            valueCount++;
+            document.getElementById("num5").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract5").removeAttribute("disabled");
+                document.querySelector(".subtract5").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract5").addEventListener("click",function(){
+            valueCount = document.getElementById("num5").value;
+            valueCount--;
+            document.getElementById("num5").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract5").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract6").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition6").addEventListener("click",function(){
+            valueCount = document.getElementById("num6").value;
+            valueCount++;
+            document.getElementById("num6").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract6").removeAttribute("disabled");
+                document.querySelector(".subtract6").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract6").addEventListener("click",function(){
+            valueCount = document.getElementById("num6").value;
+            valueCount--;
+            document.getElementById("num6").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract6").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract7").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition7").addEventListener("click",function(){
+            valueCount = document.getElementById("num7").value;
+            valueCount++;
+            document.getElementById("num7").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract7").removeAttribute("disabled");
+                document.querySelector(".subtract7").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract7").addEventListener("click",function(){
+            valueCount = document.getElementById("num7").value;
+            valueCount--;
+            document.getElementById("num7").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract7").setAttribute("disabled","disabled");
+            }
+        })
+
+        document.querySelector(".subtract8").setAttribute("disabled","disabled");
+        var valueCount
+        document.querySelector(".addition8").addEventListener("click",function(){
+            valueCount = document.getElementById("num8").value;
+            valueCount++;
+            document.getElementById("num8").value = valueCount;
+            if (valueCount >= 1) {
+                document.querySelector(".subtract8").removeAttribute("disabled");
+                document.querySelector(".subtract8").classList.remove("disabled");
+            }
+        })
+        document.querySelector(".subtract8").addEventListener("click",function(){
+            valueCount = document.getElementById("num8").value;
+            valueCount--;
+            document.getElementById("num8").value = valueCount;
+            if (valueCount == 0) {
+                document.querySelector(".subtract8").setAttribute("disabled","disabled");
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.cont {
+    overflow-y: hidden;
+}
+body{
+    background-color: black;
+    background-size: cover;
+}
+.foodsimage img{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.foodsimage img:hover{
+    opacity: 0.7;    
+}
+
+.foods a{
+    color: white;
+    text-decoration: none;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+.foods a:first-child{
+     padding-left: 30px;
+}
+
+.foods a:nth-child(4){
+    padding-left: 60px;
+}
+.foods a:nth-child(5){
+    padding-left: 55px;
+}
+.foods a:nth-child(7){
+    padding-left: 57px;
+}
+.foods a:nth-child(8){
+    padding-left: 65px;
+}
+.foods a:nth-child(9){
+    padding-left: 65px;
+}.foods a:nth-child(10){
+    padding-left: 65px;
+}
+.cont img{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60vh;
+    width: 94%;
+    cursor: pointer;
+}
+.cont img:hover{
+    opacity: 0.7;
+}
+.hide{
+    display: none;
+}

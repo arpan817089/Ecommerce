@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-image: url("../Background image/wood.jpg");
+    background-size: 100% 100%;
+}
+
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 20px;
+    text-shadow: 0 0 20px red;
+    animation: ani 5s 1 linear;
+}
+
+p{
+    color: white;
+    font-size: 23.5px;
+    animation: ani 5s 1 linear;
+    transition: 3s linear;
+    background-color: rgb(53, 53, 158);
+}
+
+@keyframes ani{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+        color: yellowgreen;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.neon:after{
+    content: attr(data-text);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding: 0 20px;
+    z-index: -1;
+    color: red;
+}
+
+.neon:before{
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 20%;
+    height: 15px;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(20px);
+}
+
+.image1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 240px;
+}
+.image1 img{
+    animation: ani2 5s 1 linear;
+}
+.image1 img:hover{
+    box-shadow: 10px 10px 10px red;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: center;
+}
+.image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+.image2 img{
+    animation: ani2 5s 1 linear;
+}
+.image2 img:hover{
+    box-shadow: 10px 10px 10px yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.image3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+.image3 img{
+    animation: ani2 5s 1 linear;
+}
+.image3 img:hover{
+    box-shadow: 10px 10px 10px blueviolet;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 400px;
+}
+.image4 img{
+    animation: ani2 5s 1 linear;
+}
+.image4 img:hover{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.image5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 60px;
+}
+.image5 img{
+    animation: ani2 5s 1 linear;
+}
+.image5 img:hover{
+    box-shadow: 10px 10px 10px brown;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+.image6 img{
+    animation: ani2 5s 1 linear;
+}
+.image6 img:hover{
+    box-shadow: 10px 10px 10px white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 140px;
+}
+.image7 img{
+    animation: ani2 5s 1 linear;
+}
+.image7 img:hover{
+    box-shadow: 10px 10px 10px green;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 600px;
+}
+.image8 img{
+    animation: ani2 5s 1 linear;
+}
+.image8 img:hover{
+    box-shadow: 10px 10px 10px skyblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.point1 p{
+    padding-right: 240px;
+}
+@keyframes ani2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+        color: yellowgreen;
+    }
+    100%{
+        opacity: 1;
+    }
+}

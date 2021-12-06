@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../services/services.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>SERVICES</title>
+</head>
+
+<body>
+    <div class="foodsimage">
+        <a href="../shops/shops.html#resturant">
+        <img src="../Background image/ac restaurant (1).jpg">
+    </a>
+    <a href="../shops/shops.html#sweets">
+        <img src="../Background image/sweet2.jpg">
+    </a>
+    <a href="../shops/shops.html#grocery">
+        <img src="../bg img/grocery items.jpg">
+    </a>
+        <img src="../bg img/raw fish.jpg">
+        <img src="../bg img/raw chicken.jpg">
+        <a href="../shops/shops.html#chocolate">
+        <img src="../bg img/cadbury chocolate.jpg">
+    </a>
+    <a href="../shops/shops.html#garments">
+        <img src="../bg img/garments.jpg">
+    </a>  
+    <a href="../shops/shops.html#books">
+        <img src="../bg img/books.jfif">
+    </a>  
+    <a href="../shops/shops.html#furniture">
+        <img src="../bg img/furniture.jfif">
+    </a>
+        <img src="../Background image/vegetables.jpg">
+    </div>
+    <div class="foods">
+        <a href="#">Resturant</a>
+        <a href="#">Sweets & Desert</a>
+        <a href="#">Grocery</a>
+        <a href="#">Raw fish</a>
+        <a href="#">Raw chicken</a>
+        <a href="#">Chocolates</a>
+        <a href="#">Garments</a>
+        <a href="#">Books</a>
+        <a href="#">Furniture</a>
+        <a href="#">Vegetables</a>
+    </div>
+    <div class="cont">
+        <a href="https://www.facebook.com/pg/Apna-Dhaba-100207112029888/menu/?ref=page_internal">
+            <img src="../Background image/apna dhaba.jpg" alt="" class="i1 i">
+        </a>
+        <a href="https://www.facebook.com/radhakantamidnapur/">
+            <img src="../Background image/radhakanta.jpg" alt="" class="i2 i hide">
+        </a>
+        <a href="https://www.facebook.com/pages/category/Restaurant/Hyderabadi-Biryani-Medinipur-100249845288916/">
+            <img src="../Background image/hydrabadi.jpg" alt="" class="i3 i hide">
+        </a>
+        <script>
+            const cont = document.querySelectorAll('.i');
+            console.log(cont.length - 1)
+            let i = 0
+            setInterval(() => {
+                if (i < cont.length - 1) {
+                    console.log(cont[i], cont[i + 1]); cont[i].classList.add('hide')
+                    cont[i + 1].classList.remove('hide'); 
+                    i = i + 1;
+                } 
+                else {
+                    i = 0; 
+                    cont[0].classList.remove('hide')
+                    cont[2].classList.add('hide')
+                }
+            }, 2000);
+            </script>
+</body>
+</html>

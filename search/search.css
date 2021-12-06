@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: rgb(139, 56, 56);
+}
+
+.cont {
+    overflow-y: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+#myInput{
+    padding-top: 10px; 
+    width: 90.245%;
+    height: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 48.5px;
+    font-size: 30px;
+    background-color: #fff;
+    border: 1px 1px 1px #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+input::placeholder{
+    padding-left: 535px;
+    color: black;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+#myUL{
+    padding-top: 20px;
+    padding-left: 540px;
+    background-color: cornsilk;
+    height: 1200px;
+    list-style-type: none;
+    width: 48.1%;
+    left: 3.94%;
+    top: 10%;
+    position: absolute;
+    opacity: 0.5;
+ } 
+
+#myUL a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 25px;
+    background-color: blanchedalmond;
+    color: black;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    /* opacity: 0;
+    pointer-events: none; */
+}
+
+#myUL a:hover{
+    background-color: white;
+    /* opacity: 0; */
+}
+
+.icon{
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    color: #00B4CC;
+    top: 4%;
+    font-size: 30px;
+    right: 7%;
+    background-color: #fff;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.images img{
+width: 90%;
+height: 1200px;
+position: absolute;
+top: 117%;
+left: 49%;
+transform: translate(-50%,-50%);
+box-shadow: 1px 1px 10px 5px red;
+opacity: 0.5;
+z-index: -1;
+}

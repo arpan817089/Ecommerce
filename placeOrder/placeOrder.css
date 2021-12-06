@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.cards{
+    width: 40%;
+    border-radius: .5rem;
+    margin-bottom: 2%;
+    display: inline-block;
+    background-attachment: fixed;
+    margin-top: 2%;
+    box-shadow: .3rem .3rem .2rem white;
+    margin-left: 80px;
+    background-color: rgb(241, 37, 105);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.title p{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(16, 107, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(186, 235, 131);
+    letter-spacing: 3px;
+}
+.bir1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    color: rgb(178, 236, 17);
+    width: 43%;
+    float: left;
+}
+.bir2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    color: rgb(178, 236, 17);
+    width: 50%;
+    float: left;
+}
+.bir3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    color: rgb(178, 236, 17);
+    width: 50%;
+    float: left;
+}
+.bir4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    color: rgb(178, 236, 17);
+    width: 50%;
+    float: left;
+} 
+.subtract{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract2{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract3{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract4{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract5{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract6{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract7{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.subtract8{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition2{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition3{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition4{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition5{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition6{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition7{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+.addition8{
+    float: left;
+    width: 15px;
+    cursor: pointer;
+}
+input{
+    color: blue;
+    width: 35px;
+    float: left;
+    height: 15px;
+    padding-left: 20px;
+}
+input:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition2:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition3:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition4:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition5:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition6:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition7:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.addition8:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract2:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract3:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract4:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract5:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract6:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract7:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.subtract8:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+}
+.price1{
+    color: rgb(178, 236, 17);
+    width: 35%;
+    float: left;
+}
+.price2{
+    color: rgb(178, 236, 17);
+    width: 32%;
+    float: left;
+}
+.price3{
+    color: rgb(178, 236, 17);
+    width: 32%;
+    float: left;
+}
+.price4{
+    color: rgb(178, 236, 17);
+    width: 32%;
+    float: left;
+}
+.btn1{
+    display: inline; 
+    color: rgb(69, 5, 219);
+    width: 15%;
+    margin-top: 50px;
+}
+/* 
+input{
+    color: blue;
+    width: 25px;
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input:hover{
+    color: white;
+   background-color: rebeccapurple;
+   cursor: pointer;
+} */
+.btn2{
+    display: inline;
+    letter-spacing: 2px;
+    width: 15%;
+    float: left;
+}
+
+.btn3{
+    display: inline;
+    color: rgb(69, 5, 219);
+    letter-spacing: 2px;
+    width: 15%;
+    float: left;
+}
+.btn4{
+    display: inline;
+    color: rgb(69, 5, 219);
+    letter-spacing: 2px;
+    width: 15%;
+    float: left;
+}
+.name{
+    display: inline;
+    color: rgb(69, 5, 219);
+    letter-spacing: 2px;
+    width: 40%;
+    float: left;
+    padding-left: 5px;
+}
+.price{
+    display: inline;
+    color: rgb(69, 5, 219);
+    letter-spacing: 2px;
+    width: 35%;
+    float: left;
+}
+.quantity{
+    display: inline;
+    color: rgb(69, 5, 219);
+    letter-spacing: 2px;
+    width: 10%;
+    float: left; 
+} 

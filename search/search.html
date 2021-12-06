@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="stylesheet" href="../search/search.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="SEARCH ITEMS" target="_blank" onkeyup="searchFun()">
+    <ul id="myUL">
+        <li><a href="#"><b>Rosogolla</b></a></li><br>
+        <li><a href="#"><b>Pantua</b></a></li><br>
+        <li><a href="#"><b>kalojam</b></a></li><br>
+        <li><a href="#"><b>khirer chop</b></a></li><br>
+        <li><a href="#"><b>rosmalai</b></a></li><br>
+        <li><a href="#"><b>singara</b></a></li><br>
+        <li><a href="#"><b>vegetable chop</b></a></li><br>
+        <li><a href="#"><b>potato</b></a></li><br>
+        <li><a href="#"><b>onion</b></a></li><br>
+        <li><a href="#"><b>fortune ricebrand oil</b></a></li><br>
+        <li><a href="#"><b>emami ricebrand oil</b></a></li><br>
+        <li><a href="#"><b>mihidana</b></a></li><br>
+        <li><a href="#"><b>basmati rice</b></a></li><br>
+        <li><a href="#"><b>Raw chicken</b></a></li><br>
+        <li><a href="#"><b>Raw prawn</b></a></li><br>
+        <li><a href="#"><b>Raw katla fish</b></a></li><br>
+        <li><a href="#"><b>Raw pona fish</b></a></li><br>
+        <li><a href="#"><b>Raw bata fish</b></a></li><br>
+        <li><a href="#"><b>Raw fish</b></a></li><br>
+        <li><a href="#"><b>Raw puti fish</b></a></li><br>
+        <li><a href="#"><b>Raw chuna fish</b></a></li><br>
+        <li><a href="#"><b>tshirt</b></a></li><br>
+        <li><a href="#"><b>pant</b></a></li><br>
+        <li><a href="#"><b>kurti</b></a></li><br>
+        <li><a href="#"><b>sweater</b></a></li><br>
+    </ul>
+       <div class="icon">
+           <i class="fa fa-search" aria-hidden="true"></i>
+        </div> 
+    <div class="images">
+        <img src="../Background image/biryani.jpg" class="i1 i">
+        <img src="../Background image/pizza2.jpg" class="i2 i hide">
+        <img src="../Background image/dry fruits.jpg" class="i3 i hide">
+        <img src="../Background image/fruit.jpg" class="i4 i hide">
+        <img src="../Background image/icecream2.jpg" class="i5 i hide">
+        <img src="../Background image/ch.jpg" class="i6 i hide">
+    </div>
+    
+    <script>
+       function searchFun(){
+           document.querySelector('#myUL a').style.cssText = "opacity: 1;"
+           document.querySelector('#myUL a:hover').style.cssText = "opacity: 1;"
+       }
+    </script>
+    <script>
+        const cont = document.querySelectorAll('.i');
+        console.log(cont.length - 1)
+        let i = 0
+        setInterval(() => {
+            if (i < cont.length - 1) {
+                console.log(cont[i], cont[i + 1])
+                cont[i].classList.add('hide')
+                cont[i + 1].classList.remove('hide')
+                i = i + 1
+            } else {
+                i = 0
+                cont[0].classList.remove('hide')
+                cont[5].classList.add('hide')
+            }
+        }, 2000);
+
+        function searchFun() {
+            let filter = document.getElementById('myInput').value.toUpperCase();
+            let ul = document.getElementById('myUL');
+            let li = ul.getElementsByTagName('li');
+            for (var i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName('a')[0];
+                let textvalue = a.textContent || a.innerHTML;
+                if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                }
+                else {
+                    li[i].style.display = 'none';
+                }
+            }
+
+        }
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#resturant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+.cards{
+    width: 30%;
+    border-radius: .5rem;
+    margin-bottom: 2%;
+    background-attachment: fixed;
+    margin-top: 2%;
+    box-shadow: .2rem .2rem .1rem white;
+    display: inline-block;
+    margin-left: 15px;
+    background-color: tomato;
+}
+.cards:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sweets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+
+}
+#grocery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+#chocolate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+
+#garments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+
+#books{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+
+#furniture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color:rgb(69, 55, 107);
+    animation: h1 1 3s linear;
+}
+@keyframes h1{
+    0%{
+        font-size: 10px;
+        color: white;
+    }
+    25%{
+        font-size: 20px;
+        color: rgb(252, 8, 57);
+    }
+    50%{
+        font-size: 30px;
+        color: green;
+    }
+    100%{
+        font-size: 40px;
+        color: yellow;
+    }
+}
