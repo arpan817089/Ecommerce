@@ -13,17 +13,26 @@ session_start();
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-xxl navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">SWIPE FOOD</a>
+    <a class="navbar-brand" href="index.php">SWIPE FOOD</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      
+      <div>
+        <?php
+        $count = 0;
+         if (isset($_SESSION['cart'])) {
+           $count = count($_SESSION['cart']);
+         }
+         ?>
+        <a href = "./mycart.php" class = "btn btn-success">My Cart (<?php echo $count; ?>)</a>
+    </div>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active"href="index.php">Home</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="navbar-brand" class="nav-link active" href="index.php">Home</a>
+        </li> -->
       </ul>
       <div>
         <?php
@@ -32,7 +41,7 @@ session_start();
            $count = count($_SESSION['cart']);
          }
          ?>
-        <a href = "mycart.php" class = "btn btn-outline-success">My Cart (<?php echo $count; ?>)</a>
+        <a href = "./mycart.php" class = "btn btn-success">My Cart (<?php echo $count; ?>)</a>
     </div>
   </div>
 </nav>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url('../Background image/food.jpg');
+    background-size: cover;
+}
+.login-box
+{
+    width: 70rem;
+    float: none;
+    margin: 5rem auto;
+    padding-top: 8.5rem;
+    padding-left: 4rem;
+}
+
+.login-left{
+        background: linear-gradient(white,yellow,green);
+}
+.login-right{
+        background: linear-gradient(red,white,orange);
+}
+
+.login-left h2{
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: rgb(63, 45, 68);
+    display: flex;
+    justify-content: center;
+    padding-right: 1.8rem;
+}
+.login-right h2{
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: rgb(63, 45, 68);
+    display: flex;
+    justify-content: center;
+    padding-right: 1.5rem;
+}
+.button{
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    width: 6rem;
+    background-color: blueviolet !important;
+    color: white !important;
+}
+.button:hover{
+    background-color: rgb(16, 3, 27) !important;
+    color: white !important;
+}
+label{
+    margin-bottom: 1rem;
+}
+input[type = text]{
+    margin-bottom: .6rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+}
+input[type = password]{
+    margin-bottom: .6rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+}
+.form-control{
+    background-color: transparent !important;
+}
+
+@media(max-width:760px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:590px)
+{
+    html{
+        font-size: 40%;
+    }
+}

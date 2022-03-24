@@ -6,6 +6,9 @@
 ::-webkit-scrollbar{
     display: none;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     background-image: url("../Background image/wood.jpg");
     background-size: 100% 100%;
@@ -16,15 +19,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    padding-top: 20px;
-    text-shadow: 0 0 20px red;
+    font-size: 5rem;
+    padding-top: 2rem;
+    text-shadow: 0 0 2rem red;
     animation: ani 5s 1 linear;
 }
 
 p{
     color: white;
-    font-size: 23.5px;
+    font-size: 2.35rem;
     animation: ani 5s 1 linear;
     transition: 3s linear;
     background-color: rgb(53, 53, 158);
@@ -48,9 +51,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    padding-top: 20px;
-    padding: 0 20px;
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding: 0 2rem;
     z-index: -1;
     color: red;
 }
@@ -61,9 +64,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 2rem;
     width: 20%;
-    height: 15px;
+    height: 1rem;
     background: #fe3a80;
     z-index: -2;
     opacity: 0.5;
@@ -74,14 +77,16 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 240px;
+    padding-top: 5rem;
+    padding-right: 24rem;
 }
 .image1 img{
+    height: 20rem;
+    width: auto;
     animation: ani2 5s 1 linear;
 }
 .image1 img:hover{
-    box-shadow: 10px 10px 10px red;
+    box-shadow: 1rem 1rem 1rem red;
     border-radius: 50%;
     cursor: pointer;
     margin: center;
@@ -90,14 +95,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 200px;
+    padding-top: 5rem;
+    padding-right: 20rem;
 }
 .image2 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image2 img:hover{
-    box-shadow: 10px 10px 10px yellow;
+    box-shadow: 1rem 1rem 1rem yellow;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -105,14 +111,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 200px;
+    padding-top: 5rem;
+    padding-right: 20rem;
 }
 .image3 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image3 img:hover{
-    box-shadow: 10px 10px 10px blueviolet;
+    box-shadow: remx 1rem 1rem blueviolet;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -121,14 +128,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-left: 400px;
+    padding-top: 5rem;
+    padding-left: 40rem;
 }
 .image4 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image4 img:hover{
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 1rem 1rem 1rem black;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -136,14 +144,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 60px;
+    padding-top: 5rem;
+    padding-right: 6rem;
 }
 .image5 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image5 img:hover{
-    box-shadow: 10px 10px 10px brown;
+    box-shadow: 1rem 1rem 1rem brown;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -152,14 +161,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 10px;
+    padding-top: 5rem;
+    padding-right: 1rem;
 }
 .image6 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image6 img:hover{
-    box-shadow: 10px 10px 10px white;
+    box-shadow: 1rem 1rem 1rem white;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -168,14 +178,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 140px;
+    padding-top: 5rem;
+    padding-right: 14rem;
 }
 .image7 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image7 img:hover{
-    box-shadow: 10px 10px 10px green;
+    box-shadow: 1rem 1rem 1rem green;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -184,19 +195,20 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-right: 600px;
+    padding-top: 5rem;
+    padding-right: 60rem;
 }
 .image8 img{
+    height: 20rem;
     animation: ani2 5s 1 linear;
 }
 .image8 img:hover{
-    box-shadow: 10px 10px 10px skyblue;
+    box-shadow: 1rem 1rem 1rem skyblue;
     border-radius: 50%;
     cursor: pointer;
 }
 .point1 p{
-    padding-right: 240px;
+    padding-right: 24rem;
 }
 @keyframes ani2{
     0%{
@@ -208,5 +220,42 @@ p{
     }
     100%{
         opacity: 1;
+    }
+}
+
+@media(max-width:998px)
+{
+    html {
+        font-size: 40%;
+    }
+}
+@media(max-width:834px)
+{
+    html {
+        font-size: 30%;
+    }
+}
+@media(max-width:628px)
+{
+    html {
+        font-size: 25%;
+    }
+}
+@media(max-width:520px)
+{
+    html {
+        font-size: 20%;
+    }
+}
+@media(max-width:425px)
+{
+    html {
+        font-size: 15%;
+    }
+}
+@media(max-width:320px)
+{
+    html {
+        font-size: 10%;
     }
 }

@@ -6,7 +6,10 @@
 ::-webkit-scrollbar{
     display: none;
 }
-
+html
+{
+    font-size: 62.5%;
+}
 body{
     background-color: rgb(139, 56, 56);
 }
@@ -20,43 +23,43 @@ body{
 }
 
 #myInput{
-    padding-top: 10px; 
-    width: 90.245%;
-    height: 30px;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    margin-left: 48.5px;
-    font-size: 30px;
+    padding-top: 1rem; 
+    width: 115.5rem;
+    height: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 4.85rem;
+    font-size: 3rem;
     background-color: #fff;
-    border: 1px 1px 1px #fff;
-    border-radius: 10px 10px 0px 0px;
+    border: .1rem .1rem .1rem #fff;
+    border-radius: 1rem 1rem 0px 0px;
 }
 
 input::placeholder{
-    padding-left: 535px;
+    padding-left: 53.5rem;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     opacity: 0.5;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 #myUL{
-    padding-top: 20px;
-    padding-left: 540px;
+    padding-top: 2rem;
+    padding-left: 54rem;
     background-color: cornsilk;
-    height: 1200px;
+    height: 115rem;
     list-style-type: none;
-    width: 48.1%;
-    left: 3.94%;
-    top: 10%;
+    width: 61.5rem;
+    left: 5rem;
+    top: 7rem;
     position: absolute;
     opacity: 0.5;
  } 
 
 #myUL a{
     text-decoration: none;
-    letter-spacing: 5px;
-    font-size: 25px;
+    letter-spacing: .5rem;
+    font-size: 2.5rem;
     background-color: blanchedalmond;
     color: black;
     text-transform: uppercase;
@@ -72,12 +75,12 @@ input::placeholder{
 }
 
 .icon{
-    position: absolute;
-    width: 30px;
-    height: 35px;
+    position: relative;
+    width: 3rem;
+    height: 3.5rem;
     color: #00B4CC;
     top: 4%;
-    font-size: 30px;
+    font-size: 3rem;
     right: 7%;
     background-color: #fff;
 }
@@ -87,13 +90,19 @@ input::placeholder{
 }
 
 .images img{
-width: 90%;
-height: 1200px;
+width: 115rem;
+height: 115rem;
 position: absolute;
-top: 110%;
-left: 49%;
-transform: translate(-50%,-50%);
-box-shadow: 1px 1px 10px 5px red;
+top: 65rem;
+left: 63rem;
+transform: translate(-57.5rem,-57.5rem);
+box-shadow: .1rem .1rem 1rem .5rem red;
 opacity: 0.5;
 z-index: -1;
+}
+@media(max-width: 980px)
+{
+    html{
+        font-size: 40%;
+    }
 }

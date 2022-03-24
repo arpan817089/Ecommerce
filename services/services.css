@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    font-size: 62.5%;
+}
 .cont {
     overflow-y: hidden;
 }
@@ -11,10 +14,10 @@ body{
     background-size: cover;
 }
 .foodsimage img{
-    padding-top: 20px;
-    padding-left: 20px;
-    height: 100px;
-    width: 100px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    height: 10rem;
+    width: 10rem;
     cursor: pointer;
 }
 .foodsimage img:hover{
@@ -24,37 +27,37 @@ body{
 .foods a{
     color: white;
     text-decoration: none;
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 15px;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    font-size: 1.5rem;
 }
 .foods a:first-child{
-     padding-left: 30px;
+     padding-left: 3rem;
 }
 
 .foods a:nth-child(4){
-    padding-left: 60px;
+    padding-left: 6rem;
 }
 .foods a:nth-child(5){
-    padding-left: 55px;
+    padding-left: 5.5rem;
 }
 .foods a:nth-child(7){
-    padding-left: 57px;
+    padding-left: 5.7rem;
 }
 .foods a:nth-child(8){
-    padding-left: 65px;
+    padding-left: 6.5rem;
 }
 .foods a:nth-child(9){
-    padding-left: 65px;
+    padding-left: 6.5rem;
 }.foods a:nth-child(10){
-    padding-left: 65px;
+    padding-left: 6.5rem;
 }
 .cont img{
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 60vh;
-    width: 94%;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: auto;
+    width: 120rem;
     cursor: pointer;
 }
 .cont img:hover{
@@ -62,4 +65,52 @@ body{
 }
 .hide{
     display: none;
+}
+@media(max-width: 990px)
+{
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width: 891px)
+{
+    html{
+        font-size: 40%;
+    }
+}
+@media(max-width: 790px)
+{
+    html{
+        font-size: 35%;
+    }
+}
+@media(max-width: 695px)
+{
+    html{
+        font-size: 30%;
+    }
+}
+@media(max-width: 595px)
+{
+    html{
+        font-size: 25%;
+    }
+}
+@media(max-width: 500px)
+{
+    html{
+        font-size: 20%;
+    }
+}
+@media(max-width: 405px)
+{
+    html{
+        font-size: 15%;
+    }
+}
+@media(max-width: 307px)
+{
+    html{
+        font-size: 10%;
+    }
 }
